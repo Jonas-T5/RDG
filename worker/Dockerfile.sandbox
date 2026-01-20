@@ -1,0 +1,25 @@
+# worker/Dockerfile.sandbox
+FROM ubuntu:24.04
+
+# Installiere nur notwendige Tools
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    nodejs \
+    npm \
+    python3 \
+    python3-pip \
+    jq \
+    bc \
+    && rm -rf /var/lib/apt/lists/*
+
+# Claude Code installieren
+RUN curl -fsSL https://claude.ai/install.sh | bash || true
+
+# Erstelle unprivilegierten User
+RUN useradd -m -s /bin/bash agent
+USER agent
+WORKDIR /home/agent
+
+# Kein Netzwerkzugang by default (wird per Docker Network Policy gesteuert)
+# Kein Zugriff auf Host-Filesystem außer gemounteten Volumes

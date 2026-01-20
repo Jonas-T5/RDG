@@ -1,0 +1,13 @@
+{
+    "model": "sonnet",
+    "max_turns": 50,
+    "output_format": "stream-json",
+    "permissions": {
+        "allow_file_read": true,
+        "allow_file_write": true,
+        "allow_command_execution": true,
+        "allow_network": false
+    },
+    "guardrails_file": "../.ralph/guardrails.md",
+    "progress_file": "../.ralph/progress.md"
+}

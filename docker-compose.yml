@@ -1,0 +1,71 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/dgm
+      - REDIS_URL=redis://redis:6379
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - project_data:/data/projects
+
+  worker:
+    build: ./worker
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/dgm
+      - REDIS_URL=redis://redis:6379
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - project_data:/data/projects
+      - /var/run/docker.sock:/var/run/docker.sock  # Für Container-Isolation
+    deploy:
+      replicas: 2  # Mehrere Worker für Parallelität
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=dgm
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - redis_data:/data
+
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    volumes:
+      - minio_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:
+  project_data:

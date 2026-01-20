@@ -1,0 +1,11 @@
+{
+    "version": "1.0",
+    "max_agents": 100,
+    "archive_policy": "keep_all",
+    "selection_strategy": "best_performance",
+    "benchmark_weights": {
+        "test_pass_rate": 0.5,
+        "avg_completion_time": 0.3,
+        "token_efficiency": 0.2
+    }
+}
