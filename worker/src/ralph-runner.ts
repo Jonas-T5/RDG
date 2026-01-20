@@ -77,7 +77,7 @@ export class RalphRunner extends EventEmitter {
 
             const result = await this.runIteration();
 
-            await this.publishEvent('iteration:completed', result);
+            await this.publishEvent('iteration:completed', { ...result });
 
             // Check for completion
             const completePath = path.join(this.config.projectDir, '.ralph', 'COMPLETE');
