@@ -1,0 +1,10 @@
+# Darwin Gödel Machine Core - Requirements
+# Research-based implementation of self-improving AI agents
+
+# Core dependencies (standard library sufficient for most features)
+# numpy is optional but improves selection performance
+numpy>=1.21.0
+
+# For development and testing
+pytest>=7.0.0
+pytest-cov>=4.0.0

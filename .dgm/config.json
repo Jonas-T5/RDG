@@ -1,11 +1,43 @@
 {
-    "version": "1.0",
+    "version": "2.0",
     "max_agents": 100,
-    "archive_policy": "keep_all",
-    "selection_strategy": "best_performance",
+    "archive_policy": "quality_diversity",
+    "selection_strategy": "quality_diversity",
+    "selection_config": {
+        "strategy": "quality_diversity",
+        "grid_resolution": 20,
+        "novelty_k": 15,
+        "epsilon": 0.1,
+        "tournament_size": 5
+    },
     "benchmark_weights": {
-        "test_pass_rate": 0.5,
-        "avg_completion_time": 0.3,
-        "token_efficiency": 0.2
+        "test_pass_rate": 0.3,
+        "task_completion_rate": 0.2,
+        "code_quality_score": 0.15,
+        "novelty_score": 0.15,
+        "efficiency": 0.1,
+        "robustness": 0.1
+    },
+    "reflexion_config": {
+        "enabled": true,
+        "max_retries": 3,
+        "bias_detection_window": 5,
+        "episodic_memory_size": 500
+    },
+    "multi_agent_review": {
+        "enabled": true,
+        "critics": ["pragmatist", "skeptic", "architect", "tester"],
+        "consensus_threshold": 0.6,
+        "max_debate_rounds": 2
+    },
+    "stepping_stones": {
+        "enabled": true,
+        "threshold": 0.3,
+        "min_descendants": 2
+    },
+    "diversity_metrics": {
+        "behavioral_dimensions": 9,
+        "grid_resolution": 5,
+        "preserve_elites": true
     }
 }
