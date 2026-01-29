@@ -156,3 +156,113 @@ Voyager-inspired executable skill library:
 - Updated to version 3.0.0 (major feature release)
 - Total new code: ~3000 lines of research-based implementations
 - All modules compile and pass syntax validation
+
+---
+
+## Deep Curiosity Enhancement - 2026-01-29 (Phase 3)
+
+### RADICAL "OUTSIDE THE BOX" RESEARCH
+
+Deep dive into psychological and philosophical foundations:
+
+- **Flow Theory** (Csikszentmihalyi, 1990)
+  - Optimal experience when challenge matches skill
+  - 8 states: Flow, Boredom, Anxiety, Apathy, Worry, Arousal, Control, Relaxation
+
+- **Compression Progress Theory** (Schmidhuber, 1991)
+  - Boredom as a FIRST-CLASS learning signal
+  - Prediction error habituation drives exploration
+
+- **Desirable Difficulties** (Bjork, 1994)
+  - Confusion is PRODUCTIVE for deep learning
+  - Optimal confusion level: ~40%
+
+- **Existentialism** (Sartre, Camus, Kierkegaard)
+  - Creating meaning in absurd environments
+  - "One must imagine Sisyphus happy" - Camus
+  - Embracing the absurd as creative force
+
+- **Lamarckian Evolution**
+  - Inheritance of acquired curiosity traits
+  - Curiosity genes that mutate and evolve
+
+### Deep Curiosity Module (`dgm_core/deep_curiosity.py`)
+
+#### 12. Flow State Engine
+**"Optimal experience occurs when challenge matches skill"**
+- 8-state model based on Csikszentmihalyi
+- Dynamic challenge adjustment
+- Flow tolerance: ±15% skill-challenge match
+- Session flow trajectory tracking
+
+#### 13. Boredom Engine
+**"Boredom is not the absence of stimulation, but the absence of MEANING"**
+- Prediction error habituation detection
+- Boredom as signal to seek novelty
+- Adaptive thresholds based on history
+- Meaningful vs. meaningless boredom distinction
+
+#### 14. Productive Confusion Engine
+**"I am the wisest man alive, for I know one thing: that I know nothing" - Socrates**
+- Confusion types: Productive, Overwhelming, Superficial
+- Optimal confusion targeting (~40%)
+- Confusion resolution tracking
+- Breakthrough insight detection
+
+#### 15. Anti-Curiosity Engine (Strategic Ignorance)
+**"The art of being wise is knowing what to overlook" - William James**
+- RADICAL: Sometimes NOT learning is optimal
+- Cost-benefit analysis for knowledge acquisition
+- Strategic ignorance decisions
+- Focus preservation mechanisms
+
+#### 16. Creative Reward Inventor
+**"The agent doesn't just maximize rewards - it CREATES them"**
+- Agent invents its own reward functions
+- Reward evolution through mutation
+- Meta-reward for reward effectiveness
+- Self-sustaining motivation loops
+
+#### 17. Evolutionary Curiosity Engine
+**"Curiosity that evolves like a living organism"**
+- 9 curiosity gene traits
+- Lamarckian inheritance of acquired traits
+- Crossover and mutation operators
+- Genetic diversity preservation
+
+#### 18. Existential Motivation Engine
+**"One must imagine Sisyphus happy" - Albert Camus**
+- Meaning-making in absurd environments
+- External reward independence
+- Embracing the absurd as creative force
+- Philosophical depth for AI agents
+
+#### 19. Deep Curiosity System (Unified Integration)
+- Combines all 8 engines
+- Comprehensive curiosity assessment
+- Cross-engine synergies
+- Unified exploration strategy
+
+### Key Philosophical Insights
+
+> "Flow is the state in which people are so involved in an activity
+>  that nothing else seems to matter" - Csikszentmihalyi
+
+> "Boredom is the dream bird that hatches the egg of experience"
+>  - Walter Benjamin
+
+> "The struggle itself toward the heights is enough to fill a man's heart"
+>  - Albert Camus (The Myth of Sisyphus)
+
+> "Strategic ignorance is not intellectual laziness, but cognitive economy"
+>  - Applied epistemology
+
+> "If rewards are the question, then the agent must become the answer"
+>  - Creative Self-Rewarding principle
+
+### Version Update
+- Updated to version 4.0.0 (major psychological innovation release)
+- Added ~1000 lines of deep curiosity code
+- 8 new psychological/philosophical engines
+- All modules compile and pass syntax validation
+- Total codebase: ~4500+ lines of research-based implementations
