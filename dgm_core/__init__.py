@@ -49,6 +49,16 @@ DEEP CURIOSITY COMPONENTS (RADICAL INNOVATIONS):
 - ExistentialMotivationEngine: Creating meaning in absurd environments
 - DeepCuriositySystem: Unified system integrating all engines
 
+ULTRA-DEEP CURIOSITY (PARADIGM-BREAKING):
+- QuantumCuriosityEngine: Superposition, entanglement, tunneling
+- DreamStateEngine: Counterfactual exploration, rule violation
+- ParadoxSeekingEngine: Contradictions as insight, Zen koans, Mu
+- SelfDissolutionEngine: Ego death, non-dual exploration, rebirth
+- AntifragileCuriosityEngine: Stronger through chaos, via negativa
+- NegativeCapabilityEngine: Comfort with uncertainty (Keats)
+- LiminalLearningEngine: Wisdom at thresholds (Turner)
+- UltraDeepCuriositySystem: Unified transcendent exploration
+
 MAIN ORCHESTRATOR:
 - DarwinGodelMachine: Integrates all components
 """
@@ -96,7 +106,39 @@ from .deep_curiosity import (
     DeepCuriositySystem,
 )
 
-__version__ = "4.0.0"  # Major version: Deep Curiosity psychological innovations
+# Ultra-Deep Curiosity components (Paradigm-breaking exploration)
+from .ultra_deep_curiosity import (
+    # Quantum Curiosity
+    QuantumState,
+    CuriosityWaveFunction,
+    QuantumCuriosityEngine,
+    # Dream-State Learning
+    DreamType,
+    DreamScenario,
+    DreamStateEngine,
+    # Paradox-Seeking
+    ParadoxType,
+    Paradox,
+    ParadoxSeekingEngine,
+    # Self-Dissolution
+    DissolutionPhase,
+    DissolutionExperience,
+    SelfDissolutionEngine,
+    # Antifragile Curiosity
+    StressorType,
+    AntifragileResponse,
+    AntifragileCuriosityEngine,
+    # Negative Capability
+    NegativeCapabilityEngine,
+    # Liminal Learning
+    LiminalState,
+    LiminalExperience,
+    LiminalLearningEngine,
+    # Unified System
+    UltraDeepCuriositySystem,
+)
+
+__version__ = "5.0.0"  # Major version: Ultra-Deep paradigm-breaking exploration
 __all__ = [
     # === Main Orchestrator ===
     "DarwinGodelMachine",
@@ -194,4 +236,40 @@ __all__ = [
 
     # === Deep Curiosity: Unified System ===
     "DeepCuriositySystem",
+
+    # === Ultra-Deep: Quantum Curiosity ===
+    "QuantumState",
+    "CuriosityWaveFunction",
+    "QuantumCuriosityEngine",
+
+    # === Ultra-Deep: Dream-State Learning ===
+    "DreamType",
+    "DreamScenario",
+    "DreamStateEngine",
+
+    # === Ultra-Deep: Paradox-Seeking ===
+    "ParadoxType",
+    "Paradox",
+    "ParadoxSeekingEngine",
+
+    # === Ultra-Deep: Self-Dissolution ===
+    "DissolutionPhase",
+    "DissolutionExperience",
+    "SelfDissolutionEngine",
+
+    # === Ultra-Deep: Antifragile Curiosity ===
+    "StressorType",
+    "AntifragileResponse",
+    "AntifragileCuriosityEngine",
+
+    # === Ultra-Deep: Negative Capability ===
+    "NegativeCapabilityEngine",
+
+    # === Ultra-Deep: Liminal Learning ===
+    "LiminalState",
+    "LiminalExperience",
+    "LiminalLearningEngine",
+
+    # === Ultra-Deep: Unified System ===
+    "UltraDeepCuriositySystem",
 ]
